@@ -15,10 +15,12 @@ $(".btn").click(function(){
 					case 1: console.log("Computer wins")
 							$("h1").text("🚩 Player 1 Wins!")
 							cwins++;
+							$("#comp").text("Score: " + cwins)
 					break;
 					case 2: console.log("User wins")
 							$("h1").text("Player 2 Wins! 🚩")
 							uwins++;
+							$("#user").text("Score: " + uwins)
 					break;
 					default: console.log()
 					}
@@ -28,6 +30,7 @@ $(".btn").click(function(){
 					case 0: console.log("User wins")
 							$("h1").text("Player 2 Wins! 🚩")
 							uwins++;
+							$("#user").text("Score: " + uwins)
 					break;
 					case 1: console.log("Draw");
 							$("h1").text("Draw!");
@@ -35,6 +38,7 @@ $(".btn").click(function(){
 					case 2: console.log("Computer wins")
 							$("h1").text("🚩 Player 1 Wins!")
 							cwins++;
+							$("#comp").text("Score: " + cwins)
 					break;
 					default: console.log();
 					}
@@ -43,10 +47,12 @@ $(".btn").click(function(){
 					case 0: console.log("Computer wins")
 							$("h1").text("🚩 Player 1 Wins!")
 							cwins++;
+							$("#comp").text("Score: " + cwins)
 					break;
 					case 1: console.log("User wins")
 							$("h1").text("Player 2 Wins! 🚩")
 							uwins++;
+							$("#user").text("Score: " + uwins)
 					break;
 
 					case 2: console.log("Draw");
@@ -80,6 +86,7 @@ function checkGame(){
 		uwins = 0
 		setTimeout(function(){
 		$("img").attr("src","images/rpc.gif");
+		$("h3").text("Score: " + cwins)
 		}, 2000)
 	}
 	else if (cwins === 3){
@@ -89,6 +96,7 @@ function checkGame(){
 		uwins = 0
 		setTimeout(function(){
 		$("img").attr("src","images/rpc.gif");
+		$("h3").text("Score: " + uwins)
 		}, 2000)
 	}
 }
