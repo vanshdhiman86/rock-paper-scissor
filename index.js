@@ -57,10 +57,7 @@ $(".btn").click(function(){
 		break;
 		default:console.log();
 	}
-
-	setTimeout(function(){
-		$(".img1").attr("src","images/rpc.gif");
-	}, 1000); 
+ 
 	checkGame();
 });
 
@@ -78,14 +75,20 @@ function computerMove() {
 function checkGame(){
 	if (uwins === 3){
 		console.log("gameend");
-		$("h1").text("You wins this round")
+		$("h1").text("You win this round")
 		cwins = 0
 		uwins = 0
+		setTimeout(function(){
+		$("img").attr("src","images/rpc.gif");
+		}, 2000)
 	}
 	else if (cwins === 3){
 		console.log("gameend");
 		$("h1").text("You loose this round")
 		cwins = 0
 		uwins = 0
+		setTimeout(function(){
+		$("img").attr("src","images/rpc.gif");
+		}, 2000)
 	}
 }
