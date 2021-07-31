@@ -12,7 +12,7 @@
     margin: 30px;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 5px 0 #232931;
-    font-size: 5.2vw;
+    font-size: 5rem;
     color: #F5FDB0;
     margin-bottom: 60px;
   }
@@ -34,24 +34,19 @@
   
   img {
     width: 200px;
-    
+    margin: 5% auto auto auto;
   }
 
   .img1{
-  	width: 250px;
+  	width: 200px;
     margin: 5% auto auto auto;
   }
 
   .img2{
-  	width: 250px;
+  	width: 200px;
     margin: 5% auto auto auto;
 
   }
-
-.btncont{
-  position: fixed;
-  left: 40vw
-}
 
   .btn{
     margin-top: 5%;
@@ -59,22 +54,14 @@
    color: #F7E6AD;
    font-weight : bold ;
    border: 2px solid black;
-     }
+  }
 
   .btns{
-    position: fixed;
-   bottom: 6rem;
-  
-   
+    margin-top: 400px;
   }
 
   .playbtn{
     color: #F7E6AD;
     font-weight : bold ;
-    position: fixed;
-   bottom: 30px;
-   left: 46vw;
-  
 
   }
-
